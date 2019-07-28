@@ -11,6 +11,6 @@ class Api::V1::CountriesController < ApplicationController
 
     private 
     def country_params
-        params.permit(:name, :region, :subregion, :currency)
+        params.permit(:id, :name, :region, :subregion, :currency)
     end 
 end
