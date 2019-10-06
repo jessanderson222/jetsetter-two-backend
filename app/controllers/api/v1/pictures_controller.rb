@@ -1,5 +1,5 @@
 class Api::V1::PicturesController < ApplicationController
-before_action :set_picture, only: [:show, :update, :destroy]
+    before_action :set_picture, only: [:show, :update, :destroy]
 
     def index
         @pictures = Picture.all
